@@ -1,0 +1,13 @@
+.menu {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 612px) {
+    .menu {
+        grid-template-columns: 1fr;
+    }
+}

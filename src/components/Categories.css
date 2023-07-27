@@ -1,0 +1,30 @@
+ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    flex-wrap: wrap;
+    font-size: 18px;
+    list-style-type: none;
+    grid-column : 1 / span 2;
+    margin: 15px 0;
+}
+
+ul li {
+    width: fit-content;
+    padding: 4px 10px;
+    transition: background 0.2s;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+ul li:hover {
+    background-color: orange;
+}
+
+@media screen and (max-width: 612px) {
+    .ul {
+        grid-column: 1 / 2;
+    }
+}
